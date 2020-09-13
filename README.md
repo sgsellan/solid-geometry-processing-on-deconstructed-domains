@@ -16,7 +16,7 @@ make
 ```
 
 ## Use
-To replicate the results in the paper, start by adding `include-matlab` to your Matlab path, for example using `addpath(genpath('include-matlab'));`. Once this is done, you can replicate each result in our paper by running each of the scripts in the `scripts` directory. The first commented line in each of them specifies by number which figure of the paper it corresponds to.
+To replicate the results in the paper, start by adding `include-matlab` and `gptoolbox` to your Matlab path, for example using `addpath(genpath('include-matlab'));addpath(genpath('gptoolbox''));`. Once this is done, you can replicate each result in our paper by running each of the scripts in the `scripts` directory. The first commented line in each of them specifies by number which figure of the paper it corresponds to.
 
 If you want to use our method on your own example meshes and equations for comparisons or applications, you can take a look at our  `example.m` file and substitute with your own code.
 
