@@ -8,7 +8,7 @@ git clone --recursive https://github.com/sgsellan/solid-geometry-processing-on-d
 ```
 After this, we will build the mex functions in the `gptoolbox` directory:
 ```
-cd developability-of-heightfields/gptoolbox/mex
+cd solid-geometry-processing-on-deconstructed-domains/gptoolbox/mex
 mkdir build
 cd build
 cmake ..
