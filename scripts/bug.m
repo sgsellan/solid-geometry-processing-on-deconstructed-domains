@@ -1,22 +1,24 @@
 %%% RUN THIS SCRIPT TO FULLY REPLICATE FIGURE 22
+% Loading meshes
 [V,F] = load_mesh('../data/bug.obj');
 [V,F] = meshfix_components(V,F);
 [V,F] = qslim_components(V,F,10000);
 [V,F] = meshfix_components(V,F);
 C = connected_components(F);
-
+% Plot meshes
 tsurf(F,V,'CData',C,fphong,fsoft,'EdgeAlpha',0.2);
 axis equal;
 camlight;
 drawnow;
-%%[SV,SF] = mesh_boolean(V,F,[],[],'union');
+
+% Tetrahedralize meshes
 [VV,TT,FF] = tetgen_components(V,F,'Flags','-q2a1');
 [cV,cT,cF,cC,n] = combine_meshes(VV,TT,FF);
 
 [VV,TT,FF] = tetgen_components(V,F,'Flags','-q10a10');
 [cV,cT,cF,cC,n] = combine_meshes(VV,TT,FF);
 
-
+% Call method to find msbk for different values of time
 ts = [50 200 800];
 cZ = zeros(size(cat(1,VV{:}),1),numel(ts));
 for i = 1:numel(ts)
@@ -28,6 +30,7 @@ for i = 1:numel(ts)
   colormap(isolines_map(flipud(cbrewer('RdYlGn',20))));
   drawnow;
 end
+
 
 % From here onwards it's just plotting
 
