@@ -2,7 +2,7 @@
 Public code release for the paper "[Solid Geometry Processing on Deconstructed Domains](http://dgp.toronto.edu/~sgsellan/pdf/overlapping.pdf)", presented at SGP 2019 and authored by Silvia Sellán, Herng Yi Cheng, Yuming Ma, Mitchell Dembowski and Alec Jacobson. Released under MIT licence.
 
 ## Installation
-To install this library, please start by cloning the repository recursively
+To install this library in MacOS, please start by cloning the repository recursively
 ```
 git clone --recursive https://github.com/sgsellan/solid-geometry-processing-on-deconstructed-domains.git
 ```
@@ -25,3 +25,6 @@ If you want to use our method on your own example meshes and equations for compa
 Please do not hesitate to contact
 [sgsellan@cs.toronto.edu](mailto:sgsellan@cs.toronto.edu) if you find any issues
 or bugs in this code, or you struggle to run it in any way.
+
+## Graphics Replicability Stamp Initiative
+We, the authors, hereby give permission to the reproducibility committee and reviewers to review the code and advertise the review publicly after the stamp is approved.
