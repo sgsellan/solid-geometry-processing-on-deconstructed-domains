@@ -14,6 +14,7 @@ cd build
 cmake ..
 make
 ```
+Some functions also depend on [triangle](https://www.cs.cmu.edu/~quake/triangle.html), which you can dowload and install.
 
 ## Use
 To replicate the results in the paper, start by adding `include-matlab` and `gptoolbox` to your Matlab path, for example using `addpath(genpath('include-matlab'));addpath(genpath('gptoolbox''));`. Once this is done, you can replicate each result in our paper by running each of the scripts in the `scripts` directory. The first commented line in each of them specifies by number which figure of the paper it corresponds to. The convergence tests in Figures 8 and 10 can be replicated by running the scripts in `scripts/convergence-tests`.
